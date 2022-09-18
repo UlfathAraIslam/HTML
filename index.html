@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survay Form</title>
+    <style>
+        .form{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <h1>Employee Interest Survay form</h1>
+    <form action="">
+        <label for="name">Enter your name</label>
+        <input type="text" id="name" name="name" value="John Doe">
+        <br>
+        <label for="department">Enter your department</label>
+        <input type="text">
+        <br>
+        <label for="">Tell us a little about yourself</label>
+        <textarea name="about" id="about" cols="30" rows="10"></textarea><br>
+       Do you exercise at home
+       <input type="radio" name="exe" value="1">yes
+       <input type="radio" name="exe" value="2">no
+       <br><br>
+       How do you like to read about your favourite topics
+       <br>
+       <input type="checkbox" name="Books">Books
+       <input type="checkbox" name="Online Resources">Online Resources
+       <input type="checkbox" name="Phone apps">Phone apps
+       <input type="checkbox" name="Magazines">Magazines
+       <br><br>
+       What genre of movies do you like
+       <select name="movie" id="movie">
+        <option value="1" selected="true">Comedy</option>
+        <option value="1">Romance</option>
+        <option value="1">Thriller</option>
+        <option value="1">Horror</option>
+        <option value="1">Biopic</option>
+
+       </select>
+       <br><br>
+       <input type="submit" value="Submit Form">
+
+    </form>
+    </div>
+</body>
+</html>
