@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Product Card design</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+             background: lightgreen;
+        }
+        .product{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 300px;
+            height: 400px;
+            background: #0e0e0e;
+            box-shadow: 0 20px 40px rgba(0,0,0,.2);
+            border-radius: 5px;
+            overflow: hidden;
+
+          
+        }
+        .product .imgbox{
+            height: 100%;
+            box-sizing: border-box;
+        }
+        .product .imgbox img{
+            display: block;
+            width: 80%;
+            margin: 10px auto 0;
+        }
+        .specifice{
+            background: white ;
+            width: 100%;
+            bottom: -164px;
+            position: absolute;
+            padding: 10px;
+            box-sizing: border-box;
+            transition: .5s;
+        }
+        .product:hover .specifice{
+            bottom: 0;
+        }
+        .specifice h2 {
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+            width: 100%;
+        }
+        .specifice h2 span{
+            font-size: 15px;
+            color: #ccc;
+            font-weight: normal;
+        }
+        .specifice .price{
+            
+            position: absolute;
+            top: 12px;
+            right: 20px;
+             font-weight: bold;
+            color: #000;
+            font-size: 30px;
+
+
+        }
+         label{
+            display: block;
+            margin-top: 5px;
+            font-weight: bold;
+            font-size: 15px;
+
+         }
+         ul{
+          display: flex;
+            margin: 0;
+            padding: 0;
+         }
+         ul li{
+            list-style: none;
+            margin: 5px 5px 0;
+            font-size: 15px;
+            font-weight: normal;
+            color: #ccc;
+         }
+         ul li:first-child{
+            margin-left: 0;
+         }
+         ul.colors li {
+            width: 15px;
+            height: 15px;
+         }
+         ul.colors li:nth-child(1){
+            background: red;
+         }
+         ul.colors li:nth-child(2){
+            background: green;
+         }
+         ul.colors li:nth-child(3){
+            background: blue;
+         }
+         ul.colors li:nth-child(4){
+            background: orange;
+         }
+         a{
+            display: block;
+            padding: 5px;
+            color: #fff;
+            margin: 10px;
+            text-align: center;
+            background: green;
+            text-decoration: none;
+            cursor: pointer;
+
+         }
+         a:hover{
+            background: lightgreen;
+         }
+
+    </style>
+</head>
+<body>
+   <div class="product">
+<div class="imgbox">
+<img src="image.jpeg" alt="art" width="400px">
+</div>
+<div class="specifice">
+   <h2>Brand<br><span>WTS</span></h2>
+    <div class="price">$100</div>
+
+<label for="size">Size</label>
+   <ul>
+     <li>20mm</li>
+     <li>25mm</li>
+     <li>30mm</li>
+    <li>35mm</li>
+    <li>40mm</li>
+   </ul>
+   <label>Colors</label>
+   <ul class="colors">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+   </ul>
+   <a href="#">Buy Now</a>
+ </div>
+</div>
+
+</body>
+</html>
