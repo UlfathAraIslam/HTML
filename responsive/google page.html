@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        section{
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+
+            
+        }
+        section header{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px;
+        }
+        section header ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        section header ul li{
+            list-style: none;
+            margin-left: 20px;
+        }
+        section header ul li a{
+            color: #111;
+            text-decoration: none;
+            font-size: 13px;
+        }
+        section header ul li button{
+            background: rgb(60, 105, 226);
+            padding: 5px;
+            border: none;
+            outline: none;
+            color: #fff;
+            font-size: 14px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+   <section>
+    <header>
+        <ul>
+            <li><a href="#">Gmail</a></li>
+            <li><a href="#">Images</a></li>
+           <li><a href="#"><img src="./images/bars.png"></a></li>
+           <li><button>Sign In</button></li>
+        </ul>
+    </header>
+    <div class="main">
+<img src="./images/images/google.png" alt="">
+<input type="text" class="search">
+<div class="icons">
+<img src="./images/images/search.png">
+<img src="./images/images/mic.png">
+</div>
+    </div>
+   </section> 
+</body>
+</html>
